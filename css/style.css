@@ -1,0 +1,97 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Manrope:wght@300;400;500&display=swap');
+/* font-family: 'Anonymous Pro', monospace;
+font-family: 'Manrope', sans-serif; */
+
+/* background-color: black;
+border-radius: 20%;
+text-align: center; */
+
+body {
+    background-color: #FDFBF8;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: [left-gutter] 1fr [wrapper] 12fr [right-gutter] 1fr;
+    grid-gap: 1vw;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Fugue','Manrope', sans-serif;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif; 
+    font-weight: 500;
+}
+
+.hero {
+    grid-column: wrapper;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 25%;
+    margin-bottom: 32%;
+}
+
+h1 {
+    grid-column: 3 / 12;
+}
+
+
+.main {
+    grid-column: wrapper;
+}
+
+.section {
+    grid-column: 1 / 13;
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.section-btn {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 20%;
+}
+
+
+.section-btn a {
+    font-size: 2.32vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    background-color: black;
+    border-radius: 20px 20px;
+    padding: 2vw 3vw;
+}
+
+.section__title {
+    grid-column: 1 / 5;
+    margin-bottom: 2vw;
+}
+
+.section__content {
+    grid-column: 1/ 5;
+    display: flex;
+}
+
+.section__content__img {
+    margin-right: 3vw;
+}
+
+
