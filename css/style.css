@@ -9,12 +9,17 @@ border-radius: 20%;
 text-align: center; */
 
 body {
+    cursor: url(../img/cursor.png), auto;
     background-color: #FDFBF8;
     font-family: 'Manrope', sans-serif; 
     font-weight: 500;
     display: grid;
     grid-template-columns: [left-gutter] 1fr [wrapper] 12fr [right-gutter] 1fr;
     grid-gap: 1vw;
+}
+
+main {
+    cursor: url(../img/cursor.png), auto;
 }
 
 
@@ -33,17 +38,11 @@ h1 {
 
 h2 {
     font-size: 4vw;
-}
-
-h2 {
     margin-bottom: 2vw;
 }
 
 h3 {
-    font-size: 3.4vw;
-}
-
-h3 {
+    font-size: 2.5vw;
     margin-bottom: 1.3vw;
 }
 
@@ -56,7 +55,7 @@ a {
 }
 
 p {
-font-size: 2vw;
+    font-size: 2vw;
 }
 
 .hero {
@@ -68,7 +67,7 @@ font-size: 2vw;
 }
 
 h1 {
-    grid-column: 3 / 12;
+    grid-column: 2 / 12;
 }
 
 
@@ -80,7 +79,8 @@ h1 {
     grid-column: 1 / 13;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 10vw;
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 16vw;
 }
 
 .section-btn {
@@ -125,6 +125,7 @@ h1 {
 
 .section__title {
     grid-column: 1 / 5;
+    grid-row: 1 / 5;
 }
 
 .section__content {
@@ -151,8 +152,13 @@ h1 {
     font-weight: 300;
 }
 
-.one .section__content img {
-    grid-column: 1/5;
+.one__img {
+  grid-column: 1/2;
+  grid-row:  2 / 5;
+}
+
+.one__img img {
+    width: 35vw;
 }
 
 .one .btn {
@@ -176,6 +182,10 @@ h1 {
     margin-top: 6vw;
 }
 
+/* .section__inner__text > p {
+    font-size: 1.5vw;
+} */
+
 .section__inner__code {
     background-color: #DEDDDD;
     border-radius: 20px 20px;
@@ -185,6 +195,40 @@ h1 {
     font-family: 'Anonymous Pro', monospace;
     padding: 3.5vw;
     color: #8710FF;
+}
+
+
+.three .section__title {
+    grid-column: 3 / 5;
+}
+
+.three .section__inner__code:hover {
+    background-color: #8710FF;
+}
+.three .section__inner__code:hover p{
+   color: white;
+}
+
+.three > p {
+    grid-column: 1 / 4;
+}
+
+.four > p,
+.five > p {
+    grid-column: 2 / 5;
+}
+
+.four h2 {
+    grid-column: 3/5;
+}
+
+.img {
+    text-align: end;
+    margin-bottom: 3%;
+}
+
+.img img {
+    width: 20vw;
 }
 
 @media (max-width: 768px) {
