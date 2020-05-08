@@ -14,12 +14,11 @@
         <section class="section section-btn">
             <div class="section-btn__link">esc</div>
             <a href="#intro" class="section-btn__link">вступление</a>
-            <a href="#" class="section-btn__link">html</a>
-            <a href="#" class="section-btn__link">разметка</a>
-            <a href="#" class="section-btn__link">CSS</a>
-            <a href="#" class="section-btn__link">CSS grid</a>
-            <a href="#" class="section-btn__link">javascript</a>
-            <a href="#" class="section-btn__link">операторы</a>
+            <a href="#html" class="section-btn__link">html</a>
+            <a href="#css" class="section-btn__link">CSS</a>
+            <a href="#cssgrid" class="section-btn__link">CSS grid</a>
+            <a href="#js" class="section-btn__link">javascript</a>
+            <a href="#active" class="section-btn__link">взаимодействие</a>
             <div class="section-btn__link">
                 <img src="./img/arrow.svg" alt="" >
             </div>
@@ -50,7 +49,7 @@
             </div>
         </section>
 
-        <section class="section two">
+        <section class="section two" id="html">
             <h2 class="section__title">HTML</h2>
             <p>HTML довольно простой язык, состоящий из элементов, которые могут быть применены к частям текста, чтобы придавать им различные значения, разделять документ на логические секции  и добавлять контент на Вашу страницу, такой как фото и видео.</p>
             <div class="section__inner">
@@ -71,11 +70,14 @@
                          < /div>
                     </p>
                 </div>
-                <div class="btn"></div>
             </div>
         </section>
 
-        <section class="section three">
+        <!-- <div class="main__gif">
+            <div class="main__gif__one"></div>
+        </div> -->
+
+        <section class="section three" id="css">
             <h2 class="section__title">CSS</h2>
             <p>Стилем или CSS (Cascading Style Sheets, каскадные таблицы стилей) называется набор параметров форматирования, который применяется к элементам документа, чтобы изменить их внешний вид. Возможность работы со стилями издавна включают в развитые издательские системы и текстовые редакторы, тем самым позволяя одним нажатием кнопки придать тексту заданный, заранее установленный вид.</p>
             <div class="section__inner">
@@ -99,7 +101,7 @@
             </div>
         </section>
 
-        <section class="section four">
+        <section class="section four" id="cssgrid">
             <h2 class="section__title">CSS grid</h2>
             <p>Grid модуль в CSS был разработан CSS Working Group для того, чтобы предоставить наилучший способ создания шаблонов в CSS. Он попал в Candidate Recommendation в феврале 2017 года, а основные бразуеры начали его поддержку в марте 2017 года</p>
             <div class="section__inner">
@@ -121,55 +123,79 @@
         <div class="img">
             <img src="./img/let.svg" alt="" class="img__let">
         </div>
-        <section class="section five">
+
+        <section class="section five" id="js">
             <h2 class="section__title">Javascript</h2>
-            <p>HTML довольно простой язык, состоящий из элементов, которые могут быть применены к частям текста, чтобы придавать им различные значения, разделять документ на логические секции  и добавлять контент на Вашу страницу, такой как фото и видео.</p>
+            <p>Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».
+               Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.
+               Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.</p>
             <div class="section__inner">
                 <div class="section__inner__text">
-                    <h3>Пример</h3>
+                    <h3>Что может JavaScript в браузере?</h3>
                     <p>
-                        Frontend-разработчик сотрудничает с дизайнерами, программистами и UX-аналитиками, чтобы создавать удобный и востребованный продукт.
+                        Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого.
                     </p>
                 </div>
-                <div class="section__inner__code">
-                    <p>
-                        < div class=”name”> <br>
-                            < p> <br>
-                             Здесь в див заключен тег
-                             параграфа, который вы
-                             читаете <br>
-                             < /p> <br>
-                         < /div>
-                    </p>
+                <div class="section__inner__link">
+                    <a href="https://learn.javascript.ru/intro">Узнать подробнее</a>
                 </div>
             </div>
         </section>
 
-        <section class="section six">
-            <h2 class="section__title">HTML</h2>
-            <p>HTML довольно простой язык, состоящий из элементов, которые могут быть применены к частям текста, чтобы придавать им различные значения, разделять документ на логические секции  и добавлять контент на Вашу страницу, такой как фото и видео.</p>
+        <section class="section six" id="active">
+            <h2 class="section__title">Взаимодействие: alert, prompt, confirm</h2>
+            <p>
+                В этой части учебника мы разбираем «собственно JavaScript», без привязки к браузеру или другой среде выполнения.Но так как мы будем использовать браузер как демо-среду, нам нужно познакомиться по крайней мере с несколькими функциями его интерфейса, а именно: alert, prompt и confirm.
+            </p>
             <div class="section__inner">
                 <div class="section__inner__text">
-                    <h3>Пример</h3>
+                    <h3>alert</h3>
                     <p>
-                        Frontend-разработчик сотрудничает с дизайнерами, программистами и UX-аналитиками, чтобы создавать удобный и востребованный продукт.
+                        Это небольшое окно с сообщением называется модальным окном. Понятие модальное означает, что пользователь не может взаимодействовать с интерфейсом остальной части страницы, нажимать на другие кнопки и т.д. до тех пор, пока взаимодействует с окном. В данном случае – пока не будет нажата кнопка «OK».
                     </p>
                 </div>
                 <div class="section__inner__code">
-                  <pre>
-                      <code>
-                        < div class=”name”> 
-                        < p> 
-                         Здесь в див заключен тег
-                         параграфа, который вы
-                         читаете 
-                         < /p> 
-                     < /div>
-                      </code>
-                  </pre>
+                    <p>
+                        alert(message);
+                    </p>
                 </div>
+                <div class="section__inner__button" id="alertBtn">Запустить код</div>
+            </div>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3> prompt</h3>
+                    <p>
+                        Функция prompt принимает два аргумента: title (Текст для отображения в окне), default (Необязательный второй параметр, который устанавливает начальное значение в поле для текста в окне). Код этой функции отобразит модальное окно с текстом, полем для ввода текста и кнопками OK/Отмена.
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        let age = prompt('Сколько тебе лет?', 100);<br>
+                        alert(`Тебе ${age} лет!`); 
+                    </p>
+                </div>
+                <div class="section__inner__button" id="promptBtn">Запустить код</div>
+            </div>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>confirm</h3>
+                    <p>
+                        Функция confirm отображает модальное окно с текстом вопроса question и двумя кнопками: OK и Отмена.Результат true, если нажата кнопка OK. В других случаях – false.
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        let isBoss = confirm("Ты здесь главный?");<br>
+                        alert( isBoss );
+                    </p>
+                </div>
+                <div class="section__inner__button" id="confirmBtn">Запустить код</div>
             </div>
         </section>
+
+       
     </main>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
