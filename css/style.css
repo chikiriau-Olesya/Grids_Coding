@@ -303,6 +303,10 @@ h1 {
     grid-row: 1 / 2;
 }
 
+.seven > p {
+    grid-column: 2 / 5;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 10vw;

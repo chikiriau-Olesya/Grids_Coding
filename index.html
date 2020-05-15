@@ -23,12 +23,12 @@
             <div class="section-btn__link">
                 <img src="./img/arrow.svg" alt="" >
             </div>
-            <a href="#" class="section-btn__link">циклы while и for</a>
-            <a href="#" class="section-btn__link">функции</a>
-            <a href="#" class="section-btn__link">массивы</a>
-            <a href="#" class="section-btn__link">библиотеки</a>
+            <a href="#forwhile" class="section-btn__link">циклы while и for</a>
+            <a href="#functions" class="section-btn__link">функции</a>
+            <a href="#mas" class="section-btn__link">массивы</a>
+            <a href="#lib" class="section-btn__link">библиотеки</a>
             <div class="section-btn__link"></div>
-            <a href="#" class="section-btn__link">конец</a>
+            <a href="#end" class="section-btn__link">конец</a>
         </section>
         <section class="section one" id="intro">
             <h2 class="section__title">Вступление</h2>
@@ -73,10 +73,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <div class="main__gif">
-            <div class="main__gif__one"></div>
-        </div> -->
 
         <section class="section three" id="css">
             <h2 class="section__title">CSS</h2>
@@ -192,6 +188,134 @@
                 </div>
                 <div class="section__inner__button" id="confirmBtn">Запустить код</div>
             </div>
+        </section>
+
+        <section class="section seven" id="forwhile">
+            <h2 class="section__title"> Циклы for и do while</h2>
+            <p>При написании скриптов зачастую встаёт задача сделать однотипное действие много раз.
+                Например, вывести товары из списка один за другим. Или просто перебрать все числа от 1 до 10 и для каждого выполнить одинаковый код. 
+                Для многократного повторения одного участка кода предусмотрены циклы.</p>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Пример</h3>
+                    <p>
+                        Цикл выполняет alert(i) для i от 0 до (но не включая) 3:
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        for (let i = 0; i < 3; i++) { <br>
+                            alert(i);<br>
+                          }
+                    </p>
+                </div>
+            </div>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Пример</h3>
+                    <p>
+                        Эта форма синтаксиса оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным. На практике чаще используется форма с предусловием: while(…) {…}
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        let i = 0;<br>
+                        do {<br>
+                          alert( i );<br>
+                          i++;<br>
+                        } while (i < 3);<br></3>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section eight" id="funcrions">
+            <h2 class="section__title">функции</h2>
+            <p>Чтобы не повторять один и тот же код во многих местах, придуманы функции. Функции являются основными «строительными блоками» программы.
+                Примеры встроенных функций вы уже видели – это alert(message), prompt(message, default) и confirm(question). Но можно создавать и свои.</p>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Пример</h3>
+                    <p>
+                        Вначале идёт ключевое слово function, после него имя функции, затем список параметров в круглых скобках через запятую (в вышеприведённом примере он пустой) и, наконец, код функции, также называемый «телом функции», внутри фигурных скобок.Наша новая функция может быть вызвана по её имени: showMessage().
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        function showMessage() {<br>
+                            alert( 'Всем привет!' );<br>
+                          }<br>
+                          
+                          showMessage();
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section nine" id="mas">
+            <h2 class="section__title">Массивы</h2>
+            <p>Объекты позволяют хранить данные со строковыми ключами. Это замечательно.</p>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Пример</h3>
+                    <p>
+                        Элементы массива нумеруются, начиная с нуля.
+                        Мы можем получить элемент, указав его номер в квадратных скобках:
+                    </p>
+                </div>
+                <div class="section__inner__code">
+                    <p>
+                        let fruits = ["Яблоко", "Апельсин", "Слива"];<br>
+
+                        alert( fruits[0] ); // Яблоко<br>
+                        alert( fruits[1] ); // Апельсин<br>
+                        alert( fruits[2] ); // Слива<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section ten" id="lib">
+            <h2 class="section__title">Библиотеки</h2>
+            <p>Язык JavaScript имеет множество библиотек, позволяющих писать код быстрее, делать ваши страницы более интерактивными</p>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Anime.js</h3>
+                    <p>
+                        Anime.js работает с любым веб-сайтом. Атрибуты CSS, SVG, DOM и объекты JavaScript: анимируйте все с помощью единого унифицированного API.
+                    </p>
+                </div>
+                <div class="section__inner__link">
+                    <a href="https://animejs.com/">Узнать подробнее</a>
+                </div>
+            </div>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>Scroll magic</h3>
+                    <p>
+                       Позволяет создавать интерактив при скролле страницы
+                    </p>
+                </div>
+                <div class="section__inner__link">
+                    <a href="https://scrollmagic.io/">Узнать подробнее</a>
+                </div>
+            </div>
+            <div class="section__inner">
+                <div class="section__inner__text">
+                    <h3>p5.js</h3>
+                    <p>
+                       Эта библиотека делает возможным создавать сложные композиции взаимодествия с веб-страницей
+                    </p>
+                </div>
+                <div class="section__inner__link">
+                    <a href="https://p5js.org/">Узнать подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section eleven" id="end">
+            <h2 class="section__title">Заключение</h2>
+            <p>Grid модуль в CSS был разработан CSS Working Group для того, чтобы предоставить наилучший способ создания шаблонов в CSS. Он попал в Candidate Recommendation в феврале 2017 года, а основные бразуеры начали его поддержку в марте 2017 года</p>
         </section>
 
        
