@@ -6,6 +6,7 @@
     <title>About code</title>
     <link rel="shortcut icon" href="img/cur.svg" type="image/svg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prism.css">
 </head>
 <body>
     <div class="grid">
@@ -54,15 +55,19 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            < div class=”name”> <br>
-                                < p> <br>
-                                 Здесь в див заключен тег
-                                 параграфа, который вы
-                                 читаете <br>
-                                 < /p> <br>
-                             < /div>
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    <div class=”name”>
+                                        <p>
+                                         Здесь в див заключен тег
+                                         параграфа, который вы
+                                         читаете
+                                         </p> 
+                                     </div>
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
@@ -78,14 +83,19 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            div: hover {    <br>
-                                  backgound-color: black;<br>
-                            }<br>
-                            div: hover p {   <br>
-                                  color: white;<br>
-                            }
-                        </p>
+                        <pre>
+                            <code class="language-css">
+                                <xmp>
+                                    div: hover {    
+                                        backgound-color: black;
+                                  }
+                                  div: hover p {   
+                                        color: white;
+                                  }
+                                </xmp>
+                            </code>
+                        </pre>
+                        
                     </div>
                     
                 </div>
@@ -102,10 +112,14 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            grid-template-rows: 60px 1fr 60px;
-                            grid-template-columns: 20% 1fr 15%;
-                        </p>
+                        <pre>
+                            <code class="language-css">
+                                <xmp>
+                                    grid-template-rows: 60px 1fr 60px;
+                                    grid-template-columns: 20% 1fr 15%;
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
@@ -145,9 +159,13 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            alert(message);
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    alert(message);
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                     <div class="section__inner__button" id="alertBtn">Запустить код</div>
                 </div>
@@ -159,10 +177,14 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            let age = prompt('Сколько тебе лет?', 100);<br>
-                            alert(`Тебе ${age} лет!`); 
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    let age = prompt('Сколько тебе лет?', 100);
+                                    alert(`Тебе ${age} лет!`); 
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                     <div class="section__inner__button" id="promptBtn">Запустить код</div>
                 </div>
@@ -178,6 +200,14 @@
                             let isBoss = confirm("Ты здесь главный?");<br>
                             alert( isBoss );
                         </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    let age = prompt('Сколько тебе лет?', 100);
+                                    alert(`Тебе ${age} лет!`); 
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                     <div class="section__inner__button" id="confirmBtn">Запустить код</div>
                 </div>
@@ -196,11 +226,15 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            for (let i = 0; i < 3; i++) { <br>
-                                alert(i);<br>
-                              }
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    for (let i = 0; i < 3; i++) { 
+                                        alert(i);
+                                      }
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                 </div>
                 <div class="section__inner">
@@ -211,13 +245,17 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            let i = 0;<br>
-                            do {<br>
-                              alert( i );<br>
-                              i++;<br>
-                            } while (i < 3);<br></3>
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    let i = 0;
+                                    do {
+                                      alert( i );
+                                      i++;
+                                    } while (i < 3);
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
@@ -234,13 +272,17 @@
                         </p>
                     </div>
                     <div class="section__inner__code">
-                        <p>
-                            function showMessage() {<br>
-                                alert( 'Всем привет!' );<br>
-                              }<br>
-                              
-                              showMessage();
-                        </p>
+                        <pre>
+                            <code class="language-js">
+                                <xmp>
+                                    function showMessage() {
+                                        alert( 'Всем привет!' );
+                                      }
+                                      
+                                      showMessage();
+                                </xmp>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
@@ -256,20 +298,18 @@
                             Мы можем получить элемент, указав его номер в квадратных скобках:
                         </p>
                     </div>
-                    <div class="section__inner__code">
-                        <p>
-                            <pre>
-                                <code class="language-js">
-                                    <xmp>
-                                        <h2>это пример кода на ХТМЛ</h2>
-                                        function setCount(count) {
-                                        return count + 1;
-                                        }
-                                    </xmp>
-                                </code>
-                            </pre>
-                        </p>
-                    </div>
+                 
+                    <pre>
+                        <code class="language-js">
+                            <xmp>
+                                <h2>это пример кода на ХТМЛ</h2>
+                                function setCount(count) {
+                                return count + 1;
+                                }
+                            </xmp>
+                        </code>
+                    </pre>
+                    
                 </div>
             </section>
     
@@ -321,6 +361,6 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="prism.js"></script> 
+    <script src="js/prism.js"></script> 
 </body>
 </html>

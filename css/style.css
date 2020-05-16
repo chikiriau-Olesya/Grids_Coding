@@ -163,14 +163,8 @@ h1 {
 
 .section__inner__code,
 .section__inner__link {
-    background-color: #DEDDDD;
+    background-color: rgb(8, 8, 8);
     border-radius: 20px 20px;
-}
-
-.section__inner__code p {
-    font-family: 'Anonymous Pro', monospace;
-    padding: 3.5vw;
-    color: #8710FF;
 }
 
 .three,
